@@ -24,7 +24,7 @@ nav a
 
 h1
 {
-    color:var(--heading-background-color);
+    color: var(--heading-background-color);
 }
 
 img
@@ -56,7 +56,7 @@ aside
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+    /* text-align: center; */
 
 }
 
