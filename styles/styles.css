@@ -1,9 +1,17 @@
 /* 
 kayla Powers */
+:root
+{
+    --heading-background-color: #f06;
+    --heading-text-color: #333;
+    --heading-font: 'Montserrat', Helvetic, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+}
 
 nav
 {
-    background-color: darkblue;
+    background-color: var(--heading-background-color);
     padding: 10px;
 }
 
@@ -16,7 +24,7 @@ nav a
 
 h1
 {
-    color: darkblue;
+    color:var(--heading-background-color);
 }
 
 img
