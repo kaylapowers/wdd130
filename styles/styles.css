@@ -66,6 +66,7 @@ aside
     /* background-color: #eee; */
     /* color: #333; */
     text-align: center;
+    position: relative;
 
 
 }
@@ -107,7 +108,7 @@ footer
     text-align: center;
 }
 
-/* CLASS SELECTORS will go here */
+/* CLASS SELECTORS */
 .box
 {
     margin: 1rem;
