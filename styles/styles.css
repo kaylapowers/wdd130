@@ -59,12 +59,6 @@ main
 aside
 {
     width: 20rem;
-    /* margin: 1rem; */
-    /* border: 1px solid rgb(0 0 0 / 0.2); */
-    /* 1 */
-    /* padding: 1rem; */
-    /* background-color: #eee; */
-    /* color: #333; */
     text-align: center;
     position: relative;
 
@@ -108,7 +102,7 @@ footer
     text-align: center;
 }
 
-/* CLASS SELECTORS */
+/*CLASS SELECTORS*/
 .box
 {
     margin: 1rem;
