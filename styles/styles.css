@@ -9,6 +9,15 @@ kayla Powers */
     --border: 1px solid rgb(0 0 0 / 0.1);
 }
 
+*
+{
+    /* CSS properties */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav
 {
     background-color: var(--heading-background-color);
@@ -50,14 +59,22 @@ main
 aside
 {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    /* margin: 1rem; */
+    /* border: 1px solid rgb(0 0 0 / 0.2); */
     /* 1 */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    /* text-align: center; */
+    /* padding: 1rem; */
+    /* background-color: #eee; */
+    /* color: #333; */
+    text-align: center;
 
+
+}
+
+aside h2
+{
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
 
 aside img
@@ -71,6 +88,7 @@ main img
 {
     width: 150px;
     height: auto;
+    float: right;
 }
 
 p
@@ -87,4 +105,15 @@ footer
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* CLASS SELECTORS will go here */
+.box
+{
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #bd2424;
+    color: #d2c6eb;
+
 }
