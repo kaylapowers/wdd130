@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 :root
 {
 	font-face {
@@ -23,31 +24,16 @@
 			font-weight: 700;
 			font-style: normal;
 		  }
-		  
-
-		  .noto-serif-hentaigana-<riv> {
-			font-family: "Noto Serif Hentaigana", serif;
-			font-optical-sizing: auto;
-			font-weight: <weight>;
-			font-style: normal;
-		  }
-
-		  
-			.noto-serif-<riv> {
-				font-family: "Noto Serif", serif;
-				font-optical-sizing: auto;
-				font-weight: <weight>;
-				font-style: normal;
-				font-variation-settings: "wdth" 100;
-  		  }
+				
+  		
 
 	}
 
 	/* colors pulled from logo */
 	/* colors pulled from logo */
-	--primary-color: #8F202F;
+	--primary-color: #8f1424;
 	/* rust */
-	--secondary-color: #0E2449;
+	--secondary-color: #9ab31e;
 	/*Dark blue*/
 	--accent1-color: #D59711;
 	/* yellow-tan*/
