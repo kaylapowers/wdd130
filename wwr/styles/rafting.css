@@ -1,0 +1,185 @@
+/* Kayla Powers WDD130 Rivers Whitewater Company About page */
+*{
+	margin: 0;
+	padding: 0;
+}
+:root
+{
+	font-face {
+		.rowdies-light {
+			font-family: "Rowdies", sans-serif;
+			font-weight: 300;
+			font-style: normal;
+		  }
+		  
+		  .rowdies-regular {
+			font-family: "Rowdies", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+		  }
+		  
+		  .rowdies-bold {
+			font-family: "Rowdies", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+		  }
+		  
+
+		  .noto-serif-hentaigana-<riv> {
+			font-family: "Noto Serif Hentaigana", serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+		  }
+
+		  
+			.noto-serif-<riv> {
+				font-family: "Noto Serif", serif;
+				font-optical-sizing: auto;
+				font-weight: <weight>;
+				font-style: normal;
+				font-variation-settings: "wdth" 100;
+  		  }
+
+	}
+
+	/* colors pulled from logo */
+	/* colors pulled from logo */
+	--primary-color: #8F202F;
+	/* rust */
+	--secondary-color: #0E2449;
+	/*Dark blue*/
+	--accent1-color: #D59711;
+	/* yellow-tan*/
+	--accent2-color: #509AA0;
+	/*light blue*/
+	--accent3-color: #5C1A3A;
+	/*maroon*/
+	--accent4-color: #F0B590;
+	/* peach */
+	--accent5-color: #2B4E39;
+	/* forest green*/
+
+	--heading-background-color: var(--accent3-color);
+	--footer-background-color: var(--accent1-color);
+	--main-background-color: rgb(129, 49, 49);
+
+	--heading-font: "Rowdies-Bold"
+		--text-font: "Noto_Serif_hentaigana-rivers_light"
+}
+
+
+/* header container*/
+header {
+	
+	background-color: #509AA0;
+}
+
+header img{
+
+	width: 100px;
+}
+
+main {
+	max-width: 800px;
+	} 
+
+h1 {
+	
+	font-size: 2.5rem;
+	text-shadow: 3px 3px 3px #777;
+	color: rgb(7, 15, 42);
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	font-family: "NotoSerif_Condensed-black.ttf";
+
+}
+
+h2 {
+
+font-size: 2.5rem;
+text-shadow: 1px ;
+color: blue;
+width: 100%;
+text-align: center;
+
+}
+
+/* hero container with div in main*/
+.hero {
+
+	position: relative;
+}
+/*hero img, H1, article with img and para  */
+.hero img
+{
+	width: 100%;
+	height: 400px;
+	opacity: 70%;
+	object-fit: cover;
+}
+
+/*
+.content-box {
+	
+	padding: 20px;
+	margin: 10px;
+	top: 15px;
+	width: 700px;
+	height: auto;
+	display: block;
+}
+*/
+.content-box img {	
+	position: absolute;
+	top : 75px;
+	right: 10px;
+	float: right;
+	height: auto;
+	width: 40%;
+
+}
+
+.content-box p {
+
+	position: absolute;
+	top: 95px;
+	float: left;
+	width:  50%;
+	height: auto;
+	
+}
+
+
+footer
+{
+	height: 75px;
+	bottom: 0px;
+	
+	border-top: 1px solid #000;
+	background-color: rgb(92, 67, 207);
+	text-align: left;
+	position: relative;
+}
+
+footer p {
+ margin-top: 15px;
+ margin-left: 25px;
+ display: inline-block;
+ text-align: center;
+
+}
+footer img
+{
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 20px;
+
+	width: 30 px;
+	height: 35px;
+	float: right;
+
+
+}
+
