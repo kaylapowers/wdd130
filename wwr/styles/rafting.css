@@ -6,59 +6,38 @@
 
 :root
 {
-	font-face {
-		.rowdies-light {
-			font-family: "Rowdies", sans-serif;
-			font-weight: 300;
-			font-style: normal;
-		  }
-		  
-		  .rowdies-regular {
-			font-family: "Rowdies", sans-serif;
-			font-weight: 400;
-			font-style: normal;
-		  }
-		  
-		  .rowdies-bold {
-			font-family: "Rowdies", sans-serif;
-			font-weight: 700;
-			font-style: normal;
-		  }
-				
-  		
+	
+	--heading-text-color: #9ab31e;
+	--heading-font: 'Montserrat', Helvetica, sans-serif;
+	--padding: 1 rem;
+	--border: 1px solid rgb (0 0 0 / 0.1)
 
-	}
 
 	/* colors pulled from logo */
 	/* colors pulled from logo */
-	--primary-color: #8f1424;
+	--primary-color:: 
 	/* rust */
-	--secondary-color: #9ab31e;
+	--secondary-color:#509AA0;
 	/*Dark blue*/
-	--accent1-color: #D59711;
+	--accent1-color: #7c6d0e;
 	/* yellow-tan*/
 	--accent2-color: #509AA0;
 	/*light blue*/
 	--accent3-color: #5C1A3A;
 	/*maroon*/
-	--accent4-color: #F0B590;
-	/* peach */
-	--accent5-color: #2B4E39;
-	/* forest green*/
 
-	--heading-background-color: var(--accent3-color);
+	--heading-background-color: var(--accent2-color);
 	--footer-background-color: var(--accent1-color);
-	--main-background-color: rgb(129, 49, 49);
+	
 
-	--heading-font: "Rowdies-Bold"
-		--text-font: "Noto_Serif_hentaigana-rivers_light"
 }
-
+	
 
 /* header container*/
 header {
 	
-	background-color: #509AA0;
+	background-color: var(--heading-background-color);
+	color:var(--accent3-color);
 }
 
 header img{
