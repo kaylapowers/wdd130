@@ -1,192 +1,237 @@
-/* Kayla Powers WDD130 Rivers Whitewater Company About page */
-*{
-	margin: 0;
-	padding: 0;
-}
 
-:root
-{
-	
-	--heading-text-color: #9ab31e;
-	--heading-font: 'Montserrat', Helvetica, sans-serif;
-	--padding: 1 rem;
-	--border: 1px solid rgb (0 0 0 / 0.1)
+.root {
 
 
-	/* colors pulled from logo */
-	/* colors pulled from logo */
-	--primary-color:: 
-	/* rust */
-	--secondary-color:#509AA0;
-	/*Dark blue*/
-	--accent1-color: #7c6d0e;
-	/* yellow-tan*/
-	--accent2-color: #509AA0;
-	/*light blue*/
-	--accent3-color: #5C1A3A;
-	/*maroon*/
-
-	--heading-background-color: var(--accent2-color);
-	--footer-background-color: var(--accent1-color);
-	
 
 }
-	
 
-/* header container*/
-header {
-	
-	
-	background-color: var(--heading-background-color);
-	color:var(--accent3-color);
-	
+* {
+max-width: 1000px;
+margin: 0px;
+padding: 0;
+box-sizing: border-box; 
+}
+body {
+
+
+}
+
+.header-container {
 	width: 100%;
+	display: grid;
+	border: 3px solid #9f1919;
+	background-color:aqua; 
+	min-height: 80px;
+	grid-template-columns: 1fr  1.25fr;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.logo-img img {
+
+margin: 0 0 0 1rem; 
+width: 75px;
+height:auto;
+border: 1px solid #000; 
+
+}
+
+.flex-nav-bar {
+	display: inline-flex;
+	flex-direction: row nowrap;
+	width: 100%;
+	list-style: none;
+	font-family: var(--navfont),san-serif;
+	justify-content: space-around;
+	border: 5px dotted black;
 	height: auto;
+	color:rgb(237, 31, 31);
+	font-family: var(--navbarfont), Arial, Helvetica, sans-serif;
 
 }
 
-header img {
+.flex-nav-bar > li {
+	border: 2px solid rgb(148, 144, 144);
+	background-color: rgb(254, 249, 249);
+	text-decoration: none;
+	color:rgb(76, 236, 8);
 
-	width: 100px;
-	right: 1px;
-	top: 10px;
+
+}
+.flex-nav-bar > a {
 	
-
-}
-header nav {
-
-position: absolute;
-top: 10px;
-right: 10px;
-color: whitesmoke;
-
-
+		
 }
 
-.navbutton {
+.flex-nav-bar a:hover {
+	/* color: var(--nav-hover-color)*/
+	color:rgb(214, 152, 18);
+}
+/***NAV-BAR_MAIN-ABOVE****/
 
-	border: 5px red;
-	width: 15px;
+
+/****TITLE FLOATS HERE HERO IMG BG, ARTICLE OVERLAY   ****/
+/*
+*//***Hero - GRID CONTAINER- Parent***/
+/***grid-container **/
+.hero-grid-container {
+	display: grid;
+	/* add grid columns and rows*/
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
 }
 
-main {
-	max-width: 840px;
+h1 {
 
-	} 
+/*color: var(--heading-color);*/
 
-h2 {
-
-font-size: 2.5rem;
-text-shadow: 3px ;
-color: blue;
-width: 100%;
+color:blue;
+font-family: var(--h1-font), Lucida Sans, sans-serif;
+font-size: 2rem;
 text-align: center;
+position: relative;
+grid-area: 2 / 1 / 3 /2;
+z-index: 1 ;
+
+background: rgba(0. 0, 0, .5);
 
 }
 
-/* hero container holding the image and text*/
-div.hero {
 
-	position: relative;
-	text-align: center;
-	color: rgb(181, 65, 65);
-	width: 100%;
-}
+/*
+/** hero image to float under 
+article**/
+.hero-image  { 
 
-
-/*hero  image inside the container  */
-.hero img
-{
-	position: relative;
-	width: 100%;
+	grid-area: 1 / 1 / 2 / 2;
 	object-fit: cover;
-	opacity: 60%;
-} 
-
-.hero h1 {  
- 
-	position: absolute;
-	width: 100%;
-	/* background-color: #7c6d0e; */
-	text-align: center;
-	color: black;
-}
-
-article {
-	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 60px;
-	margin: 30px;
-	border:5px #000;
-	border-right: 40px;
-}
-
-.hero-overlay img {
-	/*
-	position: absolute;
-	top: 40px;
-	right: 15px;
-	*/
-	border-right: 40px;
-	width: 45%;
-	float: right;
-	opacity: 100%;
-
-}
-
-.overlay p {
+	position: relative;
+	z-index: 1;
+	color: white;
+	padding: 0px;
+	/*background: rgba(0, 0, 0, 0.5);
 /*
-	position: absolute;
-	top: 8 px;
-	left: 2 px;
-	*/
-	width: 50%;
+
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	border: 10px dotted red; */
+		
+	/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+	/*
+  	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero1.webp"); */
+}
+
+.hero-image img{
+	width: 100%;
 	height: auto;
-	float: left;
-	color:#0f1050;
-	text-align: center;
-
-}
-
-
-footer
-{
-	height: 75px;
-	bottom: 0px;
 	
-	border-top: 1px solid #000;
-	background-color: rgb(92, 67, 207);
-	text-align: left;
-	position: relative;
-}
-
-footer p {
- margin-top: 15px;
- margin-left: 25px;
- display: inline-block;
- text-align: center;
-
-}
-
-.socialicons {
-
-	position: relative;
-	text-align: center;
-	margin-top: 300px !important;
-	border: 1px solid white;
-}
-
-footer img
-{
 	
-	text-decoration: none;
-	margin-right: 20px;
-
-	width: 30 px;
-	height: 35px;
-	float: right;
-
+	/* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero1.webp"); */
 
 }
 
+.hero-content {
+
+	grid-area: 2 / 1 / 3 / 2; /* Or use grid-row/grid-column */
+	  position: relative; /* Or other positioning as needed */
+ 	 z-index: 1; /* Ensure content is on top */
+ 	 /* Add your content styling here */
+ 	 color: white; /* Example: white text */
+ 	 padding: 20px; /* Example: Add padding */
+ 	background: rgba(0, 0, 0, 0.5); /* 	Example: Add a semi-transparent background */
+
+}
+
+.article-container {
+  /* Add any necessary styles for the article content */
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	border: 5px dashed purple;
+	
+
+	margin: 0;
+	background-color rgb(0 0 0 / 50%)
+	/*transform: translate(-50%, 50%) */
+	color: white;
+}
+
+
+
+/*
+.article-text {
+text-align: center;
+
+} */
+
+.article-image {
+
+
+width: 25%;
+
+/****END of Article and h1 ****/
+	
+	/***BEGin History Section ****/
+.history-section-container {
+
+	background-color: orangered;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr;
+}
+
+/*********END
+History Section ****/
+
+
+/*********Begin 
+ADVENTURE Section ****/
+
+
+/*********END
+ADVENTURE Section ****/
+
+
+
+/***** FOOTER with COPYWRITE and SOCIAL LINKS  ***/
+
+
+
+site-footer-content {
+
+	background-color:rgb(139, 92, 21);
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	border 3 px dotted black;
+	
+
+}
+
+.copywrite > p {
+
+border: 5px solid black;
+}
+
+.social-icons > a {
+
+
+/*color: var(--nav-bar-color); */
+
+text-decoration: none;
+font-size: 1.0rem;
+/*column-gap: 25px;*/
+	display: block;
+width: 25%;
+height:auto;
+border: 5px solid black;
+
+/*
+color: var(--nav-bar-color); */
+padding: 20px;
+
+font-size: 1.0rem;
+/*column-gap: 25px;*/
+}
