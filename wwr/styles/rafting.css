@@ -172,7 +172,7 @@ be 100%*/
 .hero-content {
 	
 position: absolute;	
-  	top-margin:79 px;
+  	margin-top:79 px;
 	margin-left: 40px;
   	z-index: 1; /* Ensure article section is above hero image */
 
