@@ -60,18 +60,14 @@
 
 	/****BORDERS and BOXES *****/
  
-
+		/***
 	--border-light: 1px solid rgb (0 0 0 / 0.1);
 	--border-thick: 5 px solid rgb (0 0 0 / 0.2);	
 	--shadow-box: 0 0 10px rgb(0 0 0 /0.1);
 	--important-box: 0 0 15px var(--accent4-color);
-
-	
-
-
 	--header-height: 60px;
- 	font-family: "Merriweather Sans", sans-serif;
 
+		*/
 
 }
 
@@ -82,7 +78,8 @@ padding: 0px;
 box-sizing: border-box;
 }
 
-h3, h4,h5,h6 { font-family: "Robato", serif;}
+h3, h4,h5,h6 { font-family: "Robato", serif;
+}
 
 
 .header-container {
@@ -108,10 +105,10 @@ logo-img img {
 
 .flex-nav-bar {
 	display: flex;
-	flex-direction: row nowrap;
+	
 	width: 100% ;
 	list-style: none;
-	font-family: var(--navfont),san-serif;
+	font-family: san-serif;
 	justify-content: space-around;
 	height: 60px;
 	padding: 5px;
@@ -175,9 +172,9 @@ be 100%*/
 .hero-content {
 	
 position: absolute;	
-  top :79 px;
+  	top-margin:79 px;
 	margin-left: 40px;
-  z-index: 1; /* Ensure article section is above hero image */
+  	z-index: 1; /* Ensure article section is above hero image */
 
   justify-content: center;
   align-items: center;
@@ -332,7 +329,7 @@ figcaption {
 
 color: white;
 text-align: center;
-font-size: auto;
+font-size: 15px;
 min-height: 50px;
 
 }
