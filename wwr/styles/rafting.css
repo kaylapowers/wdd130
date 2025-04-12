@@ -53,9 +53,7 @@
 		
 		/* TEXT AND SPACING */
 	--paragraph-text-color:var(--accent3-color);
-	--text-font: var(--parag-font), var(--fallbk1-font), var(--fallbk2-font)
-	--padding: 1 rem;
-	--dark-text-color: rgb(1, 1, 19) ;
+	--text-font: var(--parag-font), var(--fallbk1-font), var(--fallbk2-font);
 	--light-text-color: #fff;
 	--rivers-name-color-light:var(--accent5-color);
 	--rivers-name-color-dark: rgb(2, 2, 44);
