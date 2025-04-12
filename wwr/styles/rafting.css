@@ -39,6 +39,7 @@
 	
 	--header-font-color: white; 
 	--header-font: var(--header-font), Helvetica, sans-serif;
+	--h2-font: var(--header-font);
 	--header-background-color: var(--primary-color);
 
 
@@ -82,6 +83,8 @@ margin: 0px;
 padding: 0px;
 box-sizing: border-box;
 }
+
+h3, h4,h5,h6 { font-family: "Robato", serif;}
 
 
 .header-container {
@@ -175,7 +178,7 @@ be 100%*/
 	
 position: absolute;	
   top :79 px;
-  left: 40px;
+	margin-left: 40px;
   z-index: 1; /* Ensure article section is above hero image */
 
   justify-content: center;
@@ -199,6 +202,7 @@ position: absolute;
 	width: 100%;
 	color: rgb(6, 6, 41);
 	font-size: 45px;
+	margin-left: -30px;
 }
 
 .article-container {
@@ -220,8 +224,6 @@ justify-content: center;
 margin-top: 100px;
 padding-left:  20px;
 padding-right: 20px;
-
-
 }
 
 article p {
@@ -248,6 +250,22 @@ padding-top: 40px;
 
 /****END of Article and h1 ****/
 	
+/****H2 ****/
+h2 {
+	padding-top: 20px;
+	color:rgb(17, 12, 12);
+	background-color: aquamarine;
+
+	font-family: var(--h2-font), Arial, Helvetica, sans-serif; 
+	font-size: 30px;
+	text-align: center;
+	align-content: center;
+	width: 100%;
+	height: 100%;
+	min-height: 75px;
+	padding-bottom: 20px;
+}
+
 
 
 	/***BEGin History Section1 ****/
@@ -263,38 +281,13 @@ padding-top: 40px;
 	grid-template-rows: 1fr;
 	justify-items: center;
 	
+	}
 
-
-}
-
-/*********END
-History Section ****/
-
-
-/****H2 ****/
-h2 {
-	padding-top: 10px;
-	color:rgb(17, 12, 12);
-	/*color: var(--heading-color);
-	back-ground-color: var(--heading-background-color) */
-
-	background-color: aquamarine;
-
-	font-family: var(--h2-font), Arial, 
-Helvetica, sans-serif;
-	font-size: 2 rem;
-	text-align: center;
-	align-content: center;
-	width: 100%;
-	height: 100%;
-	min-height: 75px;
-	text-align: center;
-
-}
 
 .section1-text-container {
-	text-align: left;
-	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
 }
 
 .paragraph-text {
@@ -305,20 +298,18 @@ Helvetica, sans-serif;
 	color:rgb(235, 231, 224);
 	justify-content: left;
 	align-content: center;
+
 }
-
-/***end H2 *****/
-
 
 /*********Begin 
 aDVENTURE Section ****/
-
 
 .adventure-section2-grid {
 	display: grid;
 	background-color: rgb(30, 2, 83);
 	grid-template-rows: auto 1fr;
 	height: 100%;
+
 }
 
 .adventure-image {
@@ -328,18 +319,14 @@ aDVENTURE Section ****/
 	align-items: center;
 	min-height: 150px;
 
-
 }
 
 .adventure-image img {
 	margin-top: 20px;
 	padding: 5px;
-
 	max-width: 100%;
 
 }
-
-
 
 figcaption {
 
@@ -348,21 +335,15 @@ text-align: center;
 font-size: auto;
 min-height: 50px;
 
-
 }
 
 /*********END
 ADVENTURE Section ****/
 
 
-
 /***** FOOTER with COPYWRITE and SOCIAL LINKS  ***/
 
 .footer-container {
-/*
-	backgound-color: var
-(--footer-background-color); 
-*/
 
 	display: grid;
 	background-color: #3999c6;
@@ -374,11 +355,9 @@ ADVENTURE Section ****/
 	height: 70px;
 
 }
+
 .footer-container p {
-
 	padding-left: 300px;
-	
-
 }
 
 
@@ -388,20 +367,9 @@ ADVENTURE Section ****/
 	
 	gap: 10px;	text-decoration: none;
 
-grid-template-columns: 
-90px 90px 90px;
-gap: 40px;
-
-/*
-gap: 250px; 
-margin-top: 10px;
-grid-template-columns: 
-1rem 1rem 1rem;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: inline-flex;
-	*/
+	grid-template-columns: 90px 90px 90px;
+	gap: 40px;
+	
 } 
 
 social-link {
@@ -410,11 +378,10 @@ social-link {
 justify-content: space-around;
 margin-left: 300px;
 }
+
 social-link img {
 	height: 50px;
 	padding: 150px;
 	margin: 50px;
 
 }
-
-
