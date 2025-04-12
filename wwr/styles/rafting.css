@@ -44,7 +44,7 @@
 
 
 	/****FOOTERS*****/
-	--footer-text-color: (var(--accent5-color))
+	--footer-text-color: (var(--accent5-color));
 	--footer-background-color: var(--primary-color);
 
 
@@ -203,6 +203,7 @@ position: absolute;
 	color: rgb(6, 6, 41);
 	font-size: 45px;
 	margin-left: -30px;
+
 }
 
 .article-container {
@@ -256,7 +257,7 @@ h2 {
 	color:rgb(17, 12, 12);
 	background-color: aquamarine;
 
-	font-family: var(--h2-font), Arial, Helvetica, sans-serif; 
+	font-family: 'Robato', Arial, Helvetica, sans-serif; 
 	font-size: 30px;
 	text-align: center;
 	align-content: center;
@@ -264,6 +265,7 @@ h2 {
 	height: 100%;
 	min-height: 75px;
 	padding-bottom: 20px;
+
 }
 
 
