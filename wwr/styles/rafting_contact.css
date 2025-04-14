@@ -1,0 +1,617 @@
+
+.root {
+
+	/* colors pallette pulled from logo */
+
+	--primary-color: #874766; 
+	/* light maroon */
+	
+
+	--secondary-color:#0E2449;
+	/*Dark blue*/
+	--accent2-color: #2B4E39;
+	/* forest green*/
+	--accent1-color: #509AA0;
+	/*aqua*/
+	--accent3-color:#D59711;
+	/*mustard*/
+
+	/*  tertiary colors */
+
+	--accent4-color: #8F202F;
+	/* rust */
+	--accent5-color:#F0B590;
+	/* peach */
+
+
+	/* Navigation */
+
+	--nav-color: #675d50;
+	--nav-text: #fff;
+	--hover-color: #a9907e;
+
+	/* HEADINGS */
+	--heading-font-color: var(--primary-color); 
+	--heading-background-color: whitesmoke;
+
+
+	/***HEADERS *****/
+	
+	--header-font-color: rgb(17, 30, 106); 
+	--header-font: var(--header-font), Roboto, Helvetica, sans-serif;
+	--h2-font: var(--header-font);
+	--header-background-color: var(--primary-color);
+
+
+	/****FOOTERS*****/
+	--footer-text-color:white;
+
+
+
+		/* PARAGRAPHS */
+
+		
+		/* TEXT AND SPACING */
+	--paragraph-text-color:var(--accent3-color);
+	--text-font: var(--parag-font), var(--fallbk1-font), var(--fallbk2-font);
+	--light-text-color: #fff;
+	--rivers-name-color-light:var(--accent5-color);
+	--rivers-name-color-dark: rgb(2, 2, 44);
+
+	/****BORDERS and BOXES *****/
+ 
+		/***
+	--border-light: 1px solid rgb (0 0 0 / 0.1);
+	--border-thick: 5 px solid rgb (0 0 0 / 0.2);	
+	--shadow-box: 0 0 10px rgb(0 0 0 /0.1);
+	--important-box: 0 0 15px var(--accent4-color);
+	--header-height: 60px;
+
+		*/
+
+}
+
+* {
+max-width: 1000px;
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body {
+font-family: Merriweather, Georgia, serif;
+font-size: 1.0em;
+color: #333;
+background: #fff;
+
+}
+
+header {
+	display: grid;
+	background-color: aqua;
+	grid-template-columns: 1fr 1fr; 
+	gap: 0.5rem;
+	padding: 0.25rem;
+	text-decoration: none;
+	
+	color: var(--header-font-color);
+	font-family: var
+(--header-font), Arial, 
+Helvetica, sans-serif;
+	
+	width: 100%;
+	height: auto;
+	text-align: center;
+	
+
+}
+
+/*
+header nav {
+
+display: flex;
+flex-direction: row;
+text-decoration: none;
+
+
+
+
+header nav li{
+
+
+}
+
+.navbutton {
+
+	
+font-family: var(--button-font),
+Helvetica, sans-serif;
+font-size: 1.5rem;
+text-decoration: none;
+
+
+}
+
+*/
+
+h1, h2, h3, h4,h5,h6 { 
+	
+	font-family: "Robato", serif;
+	background-color: var(--primary-color);
+
+}
+
+h2 {
+
+font-size: 2.5rem;
+text-shadow: 3px ;
+color: blue;
+width: 100%;
+text-align: center;
+font-family: var(--heading-font), Arial, 
+Helvetica, sans-serif;
+
+}
+
+
+
+
+/* hero container holding the image and text*/
+
+.header-container {
+	display: grid;
+	margin: 10px;
+	background-color: aqua; 
+	/*
+	background-color: var (--heading-color);
+	*/
+
+	grid-template-columns: 1.5fr 1fr;
+	justify-content: center;
+	align-items: center;
+	padding-left: 10px;
+	
+
+}
+
+.logo-image img {
+	width: auto;
+	height: 75px;
+	margin-right: 150px;
+
+
+}
+
+.flex-nav-bar {
+	display: flex;
+	flex-flow: row nowrap;
+
+	list-style: none;
+	font-family: san-serif;
+	justify-content: space-around;  
+	align-items: center; 
+}                                                              
+.flex-nav-bar li {
+
+	font-size: 1.6rem;
+	flex: 1 200px;
+	margin: 5px;
+	color:#010a18;
+	flex-direction: column;
+	width: 20%;
+	align-items: flex-end;
+	margin-right: 10px;
+	margin-left: 85px;
+
+}
+
+
+.flex-nav-bar a:hover {
+	/* color: var(--nav-hover-color)*/
+	color:rgb(214, 152, 18);
+	font-size: 35px;
+}
+ */
+
+ .current {
+	color: rgb(137, 14, 14)
+
+}
+****TITLE FLOATS HERE HERO IMG BG, ARTICLE OVERLAY   ****/
+
+/***Hero - GRID CONTAINER- Parent***/
+/***grid-container **/
+/** hero image to float under 
+article**/
+
+.hero-section {
+
+
+
+}
+
+
+
+.hero-grid {
+	
+	display: grid;
+	position: relative; 
+
+} 
+
+
+
+.hero-grid img {
+		/*
+	/**This is hero underlay image must 
+be 100%*/
+	width: 100%;
+	height: 100%;
+
+
+}
+
+
+.hero-content {
+	
+	z-index: 1; /* Ensure article section is above 
+hero image*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0 ;
+  background-color: rgba(0, 0, 0, 0.5);
+	opacity: 80%;
+
+  /* Optional: Add a semi-transparent background */
+
+
+
+
+}
+
+.hero-section h1 {
+
+	margin-top: 10px;
+	font-family:(--font), Lucida Sans, 
+sans-serif;
+	text-align: center;
+	width: 100%;
+	color: rgb(219, 219, 234);
+	font-size: 45px;
+	grid-column: 1 /span 2;
+	z-index: 1;
+
+}
+
+.article-container {
+
+/*** parent of article text and img**/
+
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-flow: column;
+	grid-template-columns: 1.2 fr 1fr;
+	justify-content: center;
+	height: 100%;
+	width: 100%; 
+
+	}
+
+.article-paragraph {
+	
+	width: 60%;
+	font-size: 1rem;
+	color:rgb(229, 234, 237);
+	text-align: center;
+
+	grid-column 1;
+	margin: 1em;
+
+}
+/*
+.article-image {
+	padding-top: 30px;
+	float: right;
+	width: 40%;
+	justify-content: center;
+	align-items: center;
+}*/
+
+
+
+.booking-paragraph {
+
+	font-size: 45px;
+	float: right;
+	width: 35%;
+	
+	color:rgb(253, 252, 250);
+	justify-content:center;
+	text-align: center;
+	grid-column: 2;
+	margin-right: 1em;
+
+
+}
+
+/****END of Article and h1 ****/
+	
+/****H2 ****/
+h2, h3 {
+
+	padding-top: 20px;
+	color:rgb(17, 12, 12);
+	background-color: aquamarine;
+
+	font-family: 'Robato', Arial, Helvetica, sans-serif; 
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	padding-bottom: 10px;
+
+	width: 100%;
+	height: 100%;
+
+}
+
+section {
+background-color: rgb(45, 84, 
+99);
+}
+
+<!-- **************************LEAVE up ALONE- IDS DONE  ******************-->
+
+
+	/***BEGin History Section1 ****/
+.guides-intro-container {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	
+	}
+
+.meet-guides-paragraph {
+
+	grid-row: 1;
+	grid-column: 1 /span3;
+	font-size: 1.2rem;
+	color: white;
+	margin: 10px;
+
+}
+
+.photo-caption {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+		margin-left: 60px;
+}
+.photo-caption img {
+
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+
+}
+
+
+ 
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+ .michaels {
+
+	margin-left: 550px;
+	width: 100%;
+ }
+
+.paragraph-text {
+
+	font-size: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
+	color:rgb(235, 231, 224);
+	justify-content: left;
+	align-content: center;
+
+}
+
+/*********Begin 
+section 2 message Section ****/
+
+.company-info {
+
+	background-color:#a9907e;
+	text-align: center;
+	font-size: 1.6em;
+}
+
+.contact-section2 {
+	display: grid;
+			
+}
+
+.message-image {
+
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	align-items: center;
+	min-height: 150px;
+
+}
+
+.message-image img {
+	margin-top: 20px;
+	padding: 5px;
+	max-width: 100%;
+
+}
+
+
+figcaption {
+
+color: white;
+text-align: center;
+font-size:  15px;
+min-height: 50px;
+font-style: italic;
+
+}
+
+form { 
+	width: 650px;
+	margin: 0 rem;
+	padding: 1rem;
+	border: 1px solid rgb(0 0 0  /0.1);
+	border-radius: 0.5 rem;
+	background-color: #eee;
+	display: grid;
+}
+
+fieldset {
+	display: grid;
+	grid-gap: .5 rem;
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 /0.2);
+	padding: 1rem;
+}
+
+legend {
+	padding: 0.5 rem;
+	color: navy;
+	font-size: 1.2 rem;
+}
+
+label {
+	font-size: 1.6rem;
+	color: blueviolet;
+	text-align: right;
+	padding-right: 1rem;
+
+}
+
+input {
+	font-size: 1.8rem;
+	color: rgb(75, 15, 131);
+}
+
+button {
+	font-size: 1.8rem;
+	color: #fff;
+	margin: 1rem;
+	background-color: navy;
+	border: none;
+	border-radius: .5rem;
+	padding: .75rem;
+	font-size: 1.2rem; 
+}
+
+button:hover {
+	background-color: rgb(53, 208, 53);
+}
+
+select {
+	font-size: 1.8rem;
+	color: rgb(42, 11, 104);
+}
+textarea {
+	font-size: 1.8rem;
+	color: rgb(160, 144, 176);
+}
+
+label, input, button, select, textarea {
+	font-family: Roboto, Arial, sans-serif;
+}
+
+input, select, textarea {
+	padding: 0.5rem;
+	font-size: 1.1 rem;
+}
+
+input[type="checkbox"] {
+	width: 22px;
+	height: 22px;
+	vertical-align: bottom;
+}
+
+
+.form-item{
+	display: grid;
+	align-items: center;
+
+}
+
+.column1 {
+	grid-template-columns: 3fr 1fr;
+	margin: 0.5rem 0;
+}
+
+.column2 {
+	grid-template-columns: 1fr 2fr;
+}
+
+
+
+
+/*********END
+section 2 map and contact form Section ****/
+
+
+/***** FOOTER with COPYWRITE and SOCIAL LINKS  ***/
+
+/*
+footer {
+	margin: 1rem auto 0;
+	width: 650px;
+	text-align: center;
+	font-size: 0.8em;
+	color: #777;
+	border-top: 1px solid #ccc;		
+}
+*/
+
+
+.footer-container {
+
+	display: grid;
+	background-color: #3999c6;
+
+	grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+	align-items: center;
+}
+.wirefr img {
+	width: 50px;
+
+}
+	
+.footer-container p {
+
+}
+
+
+.social-list {
+
+	display: grid;
+	gap: 10px;	
+	text-decoration: none;
+	grid-template-columns: 90px 90px 90px;
+	gap: 40px;
+	
+} 
+
+social-link {
+	
+	justify-content: space-around;
+
+}
+
+social-link img {
+	height: 50px;
+	padding: 150px;
+	margin: 50px;
+
+}
