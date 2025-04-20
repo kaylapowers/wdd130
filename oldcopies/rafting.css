@@ -1,0 +1,422 @@
+
+.root {
+
+	/* colors pallette pulled from logo */
+
+	--primary-color: #874766; 
+	/* light maroon */
+	
+
+	--secondary-color:#0E2449;
+	/*Dark blue*/
+	--accent2-color: #2B4E39;
+	/* forest green*/
+	--accent1-color: #509AA0;
+	/*aqua*/
+	--accent3-color:#D59711;
+	/*mustard*/
+
+	/*  tertiary colors */
+
+	--accent4-color: #8F202F;
+	/* rust */
+	--accent5-color:#F0B590;
+	/* peach */
+
+
+	/* Navigation */
+
+	--nav-color: #675d50;
+	--nav-text: #fff;
+	--hover-color: #a9907e;
+
+	/* HEADINGS */
+	--heading-font-color: var(--primary-color); 
+	--heading-background-color: whitesmoke;
+
+
+	/***HEADERS *****/
+	
+	--header-font-color: white; 
+	--header-font: var(--header-font), Helvetica, sans-serif;
+	--header-background-color: var(--primary-color);
+
+
+	/****FOOTERS*****/
+	--footer-text-color: (var(--accent5-color))
+	--footer-background-color: var(--primary-color);
+
+
+		/* PARAGRAPHS */
+
+		
+		/* TEXT AND SPACING */
+	--paragraph-text-color:var(--accent3-color);
+	--text-font: var(--parag-font), var(--fallbk1-font), var(--fallbk2-font)
+	--padding: 1 rem;
+	--dark-text-color: rgb(1, 1, 19) ;
+	--light-text-color: #fff;
+	--rivers-name-color-light:var(--accent5-color);
+	--rivers-name-color-dark: rgb(2, 2, 44);
+
+	/****BORDERS and BOXES *****/
+ 
+
+	--border-light: 1px solid rgb (0 0 0 / 0.1);
+	--border-thick: 5 px solid rgb (0 0 0 / 0.2);	
+	--shadow-box: 0 0 10px rgb(0 0 0 /0.1);
+	--important-box: 0 0 15px var(--accent4-color);
+
+	
+
+
+	--header-height: 60px;
+ 	font-family: "Merriweather Sans", sans-serif;
+
+
+}
+
+* {
+max-width: 1000px;
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+h1, h2, h3, h4,h5,h6 { font-family: "Merriweather", serif;}
+
+
+.header-container {
+	display: grid;
+
+	background-color:aqua; 
+	/*
+	background-color: var (--heading-color);
+	*/
+
+	grid-template-columns: 1.5fr 2fr;
+	justify-content: center;
+	align-items: center;
+	padding-left: 40px;
+
+}
+
+logo-img img {
+	width: 40px;
+	height: auto;
+
+}
+
+.flex-nav-bar {
+	display: flex;
+	flex-direction: row nowrap;
+	width: 100% ;
+	list-style: none;
+	font-family: var(--navfont),san-serif;
+	justify-content: space-around;
+	height: 60px;
+	padding: 5px;
+
+}
+
+.flex-nav-bar  li {
+	
+	/*
+	background-color:var(--header-color); 
+	text-decoration: none;
+	color: rgb(183, 180, 180) ;
+	font-family: var(--navbarfont), Arial, 
+Helvetica, sans-serif;
+*/
+	font-size: 35px;
+	padding-right: 33px;
+
+}
+
+.flex-nav-bar a:hover {
+	/* color: var(--nav-hover-color)*/
+	color:rgb(214, 152, 18);
+}
+
+
+/***NAV-BAR_MAIN-ABOVE****/
+/*** beginning of MAIN section and overlay**/
+
+main {
+
+	display: grid;
+	/*background-color: var(--page-background-color);
+/*
+	background-color: beige;	
+	*/
+}
+
+/****TITLE FLOATS HERE HERO IMG BG, ARTICLE OVERLAY   ****/
+
+/***Hero - GRID CONTAINER- Parent***/
+/***grid-container **/
+
+.hero-grid {
+	display: grid;
+	
+	/*border: 5px dashed rgb(20, 3, 3); */
+} 
+
+/** hero image to float under 
+article**/
+.hero-image img { 
+	
+	/**This is hero underlay image must 
+be 100%*/
+	width: 100%;
+	height:100%;
+
+}
+
+.hero-content {
+	
+position: absolute;	
+  top :79 px;
+  left: 40px;
+  z-index: 1; /* Ensure article section is above hero image */
+
+  justify-content: center;
+  align-items: center;
+  
+  /*border: 2px dotted rgb(215, 202, 202); */
+  width: 100%;
+  height: 71%;
+
+ 
+  /* Optional: Add a semi-transparent background */
+
+}
+
+
+.hero-content h1 {
+	/*position: relative;*/
+	margin-top: 85px;
+	font-family: var(--font), Lucida Sans, sans-serif;
+	text-align: center;
+	width: 100%;
+	color: rgb(6, 6, 41);
+	font-size: 45px;
+}
+
+.article-container {
+
+/*** parent of article text and img**/
+	/* position: relative;
+	display: inline-grid;
+	justify-content: center;
+
+	height: 100%;
+	width: 100%; */
+	
+display: grid;
+align-items: center;
+
+overflow: auto;
+display: flex;
+justify-content: center;
+margin-top: 100px;
+padding-left:  20px;
+padding-right: 20px;
+
+
+}
+
+article p {
+
+float: left;
+width: 50%;
+/*
+paragraph-font: var(--paragraph-font), Arial, Helvetica, sans-serif;
+*/
+
+font-size: 1.3rem;
+color:rgb(229, 234, 237);
+padding-top: 40px;
+}
+
+
+.article-image {
+	padding-top: 30px;
+	float: right;
+	width: 40%;
+	justify-content: center;
+	align-items: center;
+}
+
+/****END of Article and h1 ****/
+	
+
+
+	/***BEGin History Section1 ****/
+.history-section1-container {
+
+	background-color: rgb(45, 84, 99);
+	/*
+	background-color: var (--page-background-color) 
+	*/
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	justify-items: center;
+	
+
+
+}
+
+/*********END
+History Section ****/
+
+
+/****H2 ****/
+h2 {
+	padding-top: 10px;
+	color:rgb(17, 12, 12);
+	/*color: var(--heading-color);
+	back-ground-color: var(--heading-background-color) */
+
+	background-color: aquamarine;
+
+	font-family: var(--h2-font), Arial, 
+Helvetica, sans-serif;
+	font-size: 2 rem;
+	text-align: center;
+	align-content: center;
+	width: 100%;
+	height: 100%;
+	min-height: 75px;
+	text-align: center;
+
+}
+
+.section1-text-container {
+	text-align: left;
+	padding: 10px;
+}
+
+.paragraph-text {
+
+	font-size: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
+	color:rgb(235, 231, 224);
+	justify-content: left;
+	align-content: center;
+}
+
+/***end H2 *****/
+
+
+/*********Begin 
+aDVENTURE Section ****/
+
+
+.adventure-section2-grid {
+	display: grid;
+	background-color: rgb(30, 2, 83);
+	grid-template-rows: auto 1fr;
+	height: 100%;
+}
+
+.adventure-image {
+
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	align-items: center;
+	min-height: 150px;
+
+
+}
+
+.adventure-image img {
+	margin-top: 20px;
+	padding: 5px;
+
+	max-width: 100%;
+
+}
+
+
+
+figcaption {
+
+color: white;
+text-align: center;
+font-size: auto;
+min-height: 50px;
+
+
+}
+
+/*********END
+ADVENTURE Section ****/
+
+
+
+/***** FOOTER with COPYWRITE and SOCIAL LINKS  ***/
+
+.footer-container {
+/*
+	backgound-color: var
+(--footer-background-color); 
+*/
+
+	display: grid;
+	background-color: #3999c6;
+
+
+	grid-template-rows: 1fr;
+	grid-template-columns: 65% 1fr 1fr 1fr;
+	align-items: center;
+	height: 70px;
+
+}
+.footer-container p {
+
+	padding-left: 300px;
+	
+
+}
+
+
+.social-list {
+
+	display: grid;
+	
+	gap: 10px;	text-decoration: none;
+
+grid-template-columns: 
+90px 90px 90px;
+gap: 40px;
+
+/*
+gap: 250px; 
+margin-top: 10px;
+grid-template-columns: 
+1rem 1rem 1rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline-flex;
+	*/
+} 
+
+social-link {
+	display: grid;grid-template-columns: 1fr 1fr 1fr;
+	background-color: blue;
+justify-content: space-around;
+margin-left: 300px;
+}
+social-link img {
+	height: 50px;
+	padding: 150px;
+	margin: 50px;
+
+}
+
+

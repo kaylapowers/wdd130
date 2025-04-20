@@ -23,60 +23,68 @@
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Robato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header class = "header-container">
-		<!-- Rivers Whitewater Logo image -->
-		<div class="logo-img">
-			<img src="images/rivers_whitewater_logo.webp" alt="Rivers Whitewater Logo">
-		</div>
-		<nav>
+	<header>
+	<!--/* ug again*/ -->
+		<nav class="header-container">
+			<!-- Rivers Whitewater Logo image -->
+
+			<div class="logo-img"> 
+				<img  src="images/rivers_whitewater_logo.webp" 
+	alt="Rivers Whitewater Logo">
+			</div>
 			<ul class="flex-nav-bar">
-				<li><a href="index.html">Index</a></li>
-				<li><a href="about.html">About Us</a></li>    
-				<li><a href="trips.html">Trips</a></li>
-				<li><a href="contact.html">Contact</a></li>
+						<li><a href="index.html">Index</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="trips.html">Trips</a></li>
+						<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
-	</header>
+	</header>	
+	
 
 	<!--/**** This is the hero background image with the H1 Rivers WW Rafting, article with small image ****/ -->
 	<main>
 		<!-- Hero class with 2 sections -->
+		<section class="hero-section section0">
+			
+			<div class = "hero-container">
 
-		<div class = "hero-grid">
+				<!-- hero image underlay  -->
 
-			<!-- hero image underlay  -->
+				<div class=" hero-image">
+					<img src="images/hero1.webp" alt="Rivers Whitewater Hero">	
+				</div>
 
-			<div class=" hero-image">
-				<img src="images/hero1.webp" alt="Rivers Whitewater Hero">	
-			</div>
-		
-			<!-- hero-content H! and article -->
-			<div class = "hero-content">
-				<h1>Rivers Whitewater Rafting</h1>
-		
-				<!-- ARTICLE with image that overlays hero image.-->
-				<div class= "article-container">
-				
-					<article>
-						<div class = "article-paragraph">
-		        			<p>Rivers Whitewater Rafting will provide you exceptional customer service during your trip. Come for a day or several weeks- we will keep you and yours busy. Its a great Ride! Heres some more nonsensical information. Just seeing what happens as I add test, and it doesnt seem to work. </p>
-						</div>
+				<!-- hero-content H! and article -->
 
-						<div class = "article-image">
-							<img src="images/happycust.webp" alt="Rivers Whitewater Rafting Hero0">
-						</div>
-					</article>						
+					<!-- ARTICLE with image that overlays hero image.-->
+					<div class= "article-container">
+					
+						<article>
+							<div class="article-container">
+								<h1>Rivers Whitewater About Page</h1>
+								<div class = "article-paragraph paragraph-text">
+			        				<p>Rivers Whitewater Rafting will provide you exceptional customer service during your trip. Come for a day or several weeks- we will keep you and yours busy. Its a great Ride! Heres some more nonsensical information. Just seeing what happens as I add test, and it doesnt seem to work. </p>
+								</div>
+
+								<div class = "article-image">
+									<img src="images/happycust.webp" alt="Rivers Whitewater Rafting happy cust">
+								</div>
+							</div>
+						</article>						
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		
 		<!-- ***END of MAIN section Header Hero img Article with img-->
 		<!--/*****This is section 1 for  history ****/ -->
-		<section class="section1">
-		
-			<h2>History</h2>
+		<section class=" section1-about-container">
+			<div class="history-h2">
+				<h2>History</h2>
+			</div>
 
-			<div class="section1-text-container paragraph-text">
+			<div class="section1-abt-text-cont paragraph-text">
 			<!-- Content for the second section -->
 				<p>Rivers Whitewater's name says it all. We have provided river rafting adventures to the young to old,
 				or physically disabled for over 100 years. Our family rafting is on the most gentle parts of our
@@ -88,40 +96,51 @@
 			<!-- /****This is section for Adventure Awaits and 5 images- each with its own discriptor***/ 	-->
 
 		<h2 class="adv-heading">ADVENTURE Awaits You!</h2>	
-		<section class="section2 adventure-section"> 	
+		<section class="section2-about"> 	
 
 
 
-			<div class="adventure-section2-grid">
-				<div class="adventure-image">
+			<div class="section1-grid">
+				<div class="adventure-image-cont">
 
 					<figure>
-						<img src="images/adv1.webp" alt="Adventure 1">
-						<figcaption>Class IV Rapids most EXCITING!</figcaption>
+						<div class="abt-photos">
+							<img src="images/adv1.webp" alt="Adventure 1">
+							<figcaption>Class IV Rapids most EXCITING!</figcaption>
+						</div>
 					</figure>
 
 
 					<figure>
-						<img src="images/adv2.webp" alt="Adventure 2">
-						<figcaption>Fun Family Class Just Enough!</figcaption>
+						<div class="abt-photos-2">
+							<img src="images/adv2.webp" alt="Adventure 2">
+							<figcaption>Fun Family Class Just Enough!</figcaption>
+						</div>
 					</figure>
 
 
 					<figure>
-						<img src="images/adv3.webp" alt="Adventure 3">
-						<figcaption>OOPS just a little WET!</figcaption>
+						<div class="abt-photos">							<img src="images/adv3.webp" alt="Adventure 3">
+							<figcaption>OOPS just a little WET!</figcaption>
+						</div>
 					</figure>
 
 
 					<figure>
-						<img src="images/adv4.webp" alt="Adventure 4">
-						<figcaption>Beautiful Evening Float.</figcaption>
+						<div class="abt-photos-2">
+
+							<img src="images/adv4.webp" alt="Adventure 4">
+							<figcaption>Beautiful Evening Float.</figcaption>
+						</div>
 					</figure>
 
 
 					<figure>
-						<img src="images/adv5.webp" alt="Adventure 5">
+						<div class="abt-photos">
+
+							<img src="images/adv5.webp" alt="Adventure 5">
 						<figcaption>HERE we GO AGAIN!</figcaption>
+						</div>
 					</figure>
 				</div>
 			</div>
@@ -135,7 +154,7 @@
 
 
 			<div class="wireframe-link social-link" ><a href="wirefrm.pdf"></a>
-				<figure>
+				<figure class="wireframe-link-about">
 					<img src="images/wirefrm.jpg" alt="wireframe">
 					<figcaption class="wirefig">WRFRM</figcaption>
 				</figure>

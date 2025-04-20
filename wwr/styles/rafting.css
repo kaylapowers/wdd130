@@ -3,16 +3,16 @@
 
 	/* colors pallette pulled from logo */
 
-	--primary-color: #874766; 
-	/* light maroon */
-	
 
+	--primary-color: #2d575b;
 	--secondary-color:#0E2449;
 	/*Dark blue*/
+
+
+	--accent1-color: #874766; 
+	/* light maroon */
 	--accent2-color: #2B4E39;
 	/* forest green*/
-	--accent1-color: #509AA0;
-	/*aqua*/
 	--accent3-color:#D59711;
 	/*mustard*/
 
@@ -31,16 +31,17 @@
 	--hover-color: #a9907e;
 
 	/* HEADINGS */
-	--heading-font-color: var(--primary-color); 
-	--heading-background-color: whitesmoke;
-
+	--heading-font-color: white; 
+	--heading-background-color:aqua;
+	--h2-font: var(--header-font);
 
 	/***HEADERS *****/
 	
 	--header-font-color: white; 
 	--header-font: var(--header-font), Helvetica, sans-serif;
-	--h2-font: var(--header-font);
+
 	--header-background-color: var(--primary-color);
+
 
 
 	/****FOOTERS*****/
@@ -71,14 +72,16 @@
 
 }
 
-* {
-max-width: 1000px;
+*{
+
 margin: 0px;
 padding: 0px;
 box-sizing: border-box;
+width: 800 px;
+
 }
 
-<!--**********1**************DIF -->
+
 body {
 font-family: Merriweather, Georgia, serif;
 font-size: 1.0em;
@@ -86,56 +89,27 @@ color: #333;
 background: #fff;
 
 }
-<!--***********0*************DIF -->
+
 
 
 h1, h2,h3, h4,h5,h6 {
 font-family: "Robato", serif;
+color: darkblue;
+
+width: 100%;
 }
 /*********************1********/
 
 
-.header  {
-	display: grid;
-	margin: 20px;
-	background-color: aqua; 
-	/*
-	background-color: var (--heading-color);
-	*/
-	width: 100%;
-	height: auto;
-	text-align: center;	
-	grid-template-columns: 1.5fr 1fr;
-	justify-content: space-between;
-	align-items: center;
 
+.header-container  {
 
-	gap: 0.5rem;
-	padding: 0.25rem;
-	text-decoration: none;
+background-color: aqua; 
+width: 100%;
+display: grid;
+grid-template-columns: 1.5fr 1fr;
+height: 50%;
 }
-
-
-/**********************0***/
-
-
-
-
-
-.header-container {
-	display: grid;
-	background-color:aqua; 
-	/*
-	background-color: var (--heading-color);
-	*/
-	grid-template-columns: 1.5fr 2fr;
-	align-items: center;
-	padding-left: 40px;
-	justify-content: space-between;
-
-}
-
-
 
 .header-container a:hover {
 
@@ -145,43 +119,41 @@ font-family: "Robato", serif;
 	
 }
 
-
 .logo-img {
-	width: 120px;
+	width: auto;
 	height: auto;
-	margin-right: 20px;
-
+	align-items: center;
 }
 
 .flex-nav-bar {
+	
+	width: 100%;
 	display: flex;
-	flex: row;
-	width: 100% ;
+	flex-direction: row;
+
 	list-style: none;
 	font-family: san-serif;
 	justify-content: space-around;
-	height: 60px;
-	padding: 5px;
+	align-items: center;
 
 }
 
+
 .flex-nav-bar  li {
 	
-
- 
-	text-decoration: none;
-	color: rgb(183, 180, 180) ;
 	font-family: var(--navbarfont), Arial, 
 Helvetica, sans-serif;
-
 	background-color: aqua;
-	padding-right: 20px;
-	margin-left:20px;
+	justify-items: space-around;
+
+	font-size: 25px;
 
 }
 
 .flex-nav-bar a {
-	font-size: 30px;
+	font-size: 25px;
+	text-decoration: none;
+	padding: 10px;
 }
 
 .flex-nav-bar a:hover {
@@ -189,32 +161,32 @@ Helvetica, sans-serif;
 	color:rgb(214, 152, 18);
 }
 
-.flex-nav-bar img {
+.logo-img img {
 
 	height: auto;
-	width: 40px;
+	width: auto;
+	margin: 20px;
 }
 
 /***NAV-BAR_MAIN-ABOVE****/
-/*** beginning of MAIN section and overlay**/
 
-main {
 
-	display: grid;
-}
 
+
+/******************HERO- SECTION )*********/
 /****TITLE FLOATS HERE HERO IMG BG, ARTICLE OVERLAY   ****/
 
 /***Hero - GRID CONTAINER- Parent***/
 /***grid-container **/
 section {
+	width: 100%;
 	grid-template-columns: repeat (8, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 }
 
 .hero-grid {
 	display: grid;
-grid-template-columns: repeat(8 1fr);
+
 /*border: 5px dashed rgb(20, 3, 3); */
 } 
 
@@ -235,17 +207,13 @@ be 100%*/
 .hero-content {
 	
 	position: absolute;	
-  	z-index: 1; /* Ensure article section is above hero image */
+  	z-index: 1; 
+
 	justify-content: center;
   	align-items: center;
  
  	 width: 100%;
-	 grid-column: 
 
- 
-
-
-  /* Optional: Add a semi-transparent background */
 
 
 }
@@ -292,7 +260,8 @@ width: 60%;
 grid-column: 2 / span 8;
 
 /*
-paragraph-font: var(--paragraph-font), Arial, Helvetica, sans-serif;
+paragraph-font: var(--paragraph-font), Arial, Helvetica, 
+sans-serif;
 */
 
 font-size: 1.4rem;
@@ -313,8 +282,10 @@ padding-top: 50px;
 
 .pages-link {
 
-  display: block; /* Makes the link fill the entire button area */
-  background-color: #4CAF50; /* Example button background color */
+  display: block; /* Makes the link fill the entire button 
+area */
+  background-color: #4CAF50; /* Example button background 
+color */
   color: white;
   padding: 15px 20px;
   text-decoration: none; /* Remove underline */
@@ -329,7 +300,7 @@ padding-top: 50px;
 	width: 40%;
 	justify-content: center;
 	align-items: center;
-	column-grid: 2;
+	grid-column: 2;
 }
 
 .booking-paragraph {
@@ -376,146 +347,161 @@ display: grid;
 grid-template-columns: repeat(8, 1fr)
 }
 
-.easy-water h2 {
-font-size: 35px;
-color: black;
-
-}
-
-.hero-section {
-
-	position: relative;
-	grid-template-columns: repeat(autofit, minmax(250px, 1fr));
-	grid-template-rows: repeat( 6, 1fr);
-}
-
-	/***BEGin History Section1 ****/
-.history-section1-container {
-
-
-	/*
-	background-color: var (--page-background-color) 
-	background-color: rgb(45, 84,
-99);
-	*/
-	position: absolute;
-	display: grid;
-	grid-template-rows: 1fr;
-	justify-items: center;
-	top: 0;
-	left: 0;
-	bottom:
-	
-	}
-
-
-.section1-text-container {
-	padding-top: 20px;
-	padding-bottom: 20px;
-
-}
-
-.paragraph-text {
-
-	font-size: 35px;
-	margin-left: 20px;
-	margin-right: 20px;
-	color:rgb(235, 231, 224);
-	justify-content: left;
-	align-content: center;
-
-
-
-
-}
-
-
-.meet-guides-paragraph {
-
-	grid-row: 1;
-	grid-column: 1 / span 6;
-	font-size: 1.5rem;
-	color: white;
-	margin: 10px;
-	text-align: center;
-
-}
-
-
-.adventure-section2-grid {
-	display: grid;
-	background-color: rgb(30, 2, 83);
-	grid-template-rows: auto 1fr;
-	height: 100%;
-
-}
-
-.adventure-image {
+/******************Section1 Index*******************/
+.section1-index-container {
 
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	align-items: center;
-	min-height: 150px;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(5.5, 100px);
+	background-color: tan;
 
 }
 
-.adventure-image img {
+.fun-facts {
+	padding-top: 10px;
+	grid-column: 1 / span 1 ;
+	grid-row: 1 / span 2;
 	margin-top: 20px;
-	padding: 5px;
-	max-width: 100%;
-
-}
-
-figcaption {
-
-color: white;
-text-align: center;
-font-size: 25px;
-min-height: 10px;
-
-}
+	margin-left: 10px;
 	
-.guides-intro-container {
-
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-
-
-	}
-
-
-
-.photo-caption {
-	display: grid;
-	grid-template-columns: 1fr 
-1fr 1fr;
-		margin-left: 60px;
-}
-.photo-caption img {
-
-	width: 100px;
-	height: auto;
-	object-fit: cover;
 
 }
+.sect1-article-paragraph-index {
 
-.michaels {
+	padding-top: 40px;
+	border: 2px solid red;
+	grid-column: 2 / span 2;
+	grid-row: 1 / span 5;
+	margin: 15px;
+}
 
-	margin-left: 550px;
-	width: 100%;
- }
+.gallery-3 {
 
-.paragraph-text {
+	display: grid;
+	grid-column: 5 /span 1;
+	margin-top: 10px;
+	text-align: center;
+	justify-content: center;
+	
 
-	font-size: 25px;
-	margin-left: 20px;
-	margin-right: 20px;
-	color:rgb(235, 231, 224);
-	justify-content: left;
+
+}
+.trip-indx-photo img {
+	margin: 10px;
+	width: 300%;
+	text-align: center;
+	justify-content: center;
+}
+
+.figcaption {
+	text-align: center;
+}
+
+.trip-fig {
+
+	text-align: center;
+}
+
+/***********Section 1 trips**************/
+.section1-trip {
+
+	display: grid;
+	grid-template-columns: repeat(8 , 1fr);
+	grid-template-rows: repeat(6, 200px)
+}
+.guide, 
+.easy-water {
+
+	grid-row: 1 / span 3;
+	text-align: center;
 	align-content: center;
+	background-color:#675d50;
+}
+
+.trip-photo img {
+ 
+	width: 200%;
+}
+
+.to-contact {
+
+	grid-column: 3 / span 2;
+	background-color:#e9ecf0;
+	color: black;
+	text-align: center;
+	border: 2px solid blue;
+	justify-content: center;
 
 }
-*/
+
+/****************Section 1 About*******************/
+.section1-about-container {
+	display: grid;
+	grid-template-columns:repeat(4,  .5fr);
+	grid-template-rows: repeat(4, 100px)
+}
+
+.history-h2 {
+
+	background-color:#2d575b;
+}
+
+
+.adv-heading {
+text-align: center;
+
+}
+
+.section1-grid {
+
+	grid-template-columns: repeat (5, 1fr)
+}
+
+.abt-photos {
+	grid-column: 1 / span 2;
+}
+
+.abt-photos {
+
+	grid-column: 3 / span 2;
+}
+
+/********************Section 1 Contact******************/
+
+
+
+
+
+/***************Section2 index****************/
+.section2-index-container {
+
+	display: grid;
+	grid-template-columns: 2 fr, 1fr;
+	grid-template-rows: repeat(5, 100px);
+	border: 5px solid darkblue;
+
+
+}
+.message-area email-form {
+
+grid-column: 1 ;
+grid-row: 1;
+margin: 15 px;
+padding-left: 10px;
+height: 100px;
+width: 50px;
+
+}
+
+.trip-indx-photo7 img {
+
+	margin: 10px;
+	grid-column: 2 ;
+	grid-row: 3 / span 1;
+
+	
+}
+
 .emp-photo {
 	width: 100%;
 	margin: 20px;
@@ -523,15 +509,21 @@ min-height: 10px;
 	border: 2px solid white;
 }
 	
-	/*********END
-section 1 guide info  and adventure Section ****/
+/****************section 2 about ******************/
 
 
-/***************secion 2- contact info and adventure section.*/
 
-/*********Begin 
-section 2 message Section ****/
 
+
+/*******************section2 contact ***************/
+
+
+
+/*****************section 2 Trips********************/
+
+
+
+/**************EMAIL FORM* Index****************/
 h3 {
 
 	text-align:center;
@@ -540,11 +532,6 @@ h3 {
 	background-color:#675d50
 }
 
-.section2 {
-
-	background-color:#a9907e;
-	text-align: center;
-}
 
 .company-info {
 
@@ -668,7 +655,6 @@ input[type="checkbox"] {
 }
 
 
-<!-- **********Table Element --?
 
 table {
   border-collapse: collapse;
@@ -734,9 +720,17 @@ tfoot td {
 
 
 /*********END
-section 2 map and contact form 
-Section ****/
 
+
+/*********************Table*************/
+
+
+
+
+
+
+
+/****************FOOTER**********************/
 
 
 /***** FOOTER with COPYWRITE and SOCIAL LINKS  ***/
@@ -745,16 +739,16 @@ Section ****/
 
 	display: grid;
 	background-color: aqua;
+	min-height: 64px;
 
-
-	grid-template-rows: 1fr;
-	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 1fr .25fr ;
+	grid-template-columns: repeat(5, 1fr);
 	align-items: center;
-	min-height: 50px;
 
 }
 .wireframe-link {
-	width: 100px;
+	
+	
 	padding-top: 20px;
 	padding-left: 40px;
 	color: black;
@@ -763,9 +757,23 @@ Section ****/
 	border: 2px solid darkblue;
 	
 }
-.wireframe-link {
+
+.wireframe-link-trip {
+
+	padding-top: 20px;
+	padding-left: 40px;
+	color: black;
+	align-content: center;
+	align-items: center;
+	border: 2px solid darkblue;
+	
+}
+.wireframe-link img {
+	height: 50px;
 
 }
+
+
 
 .wirefig {
 	color:#0E2449;
@@ -793,11 +801,10 @@ justify-content: space-around;
 
 }
 
+/*
 social-link img {
 	height: 50px;
 	padding: 150px;
 	margin: 50px;
-	
-	
-
 }
+*/

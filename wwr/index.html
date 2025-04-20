@@ -3,7 +3,7 @@
 
 <!-- ***START HEAD with TITLE -->
 <head>
-    <!-- Kayla Powers Wdd150 Cindex home--> 
+    <!-- Kayla Powers Wdd150 Index home--> 
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Robato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header class="header-cont-container">
+	<header>
 	<!--/* ug again*/ -->
 		<nav class="header-container">
 			<!-- Rivers Whitewater Logo image -->
@@ -34,10 +34,10 @@
 
 			<ul class="flex-nav-bar">
 
-						<li><a href="index.html">Index</a></li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="trips.html">Trips</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="index.html">Index</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="trips.html">Trips</a></li>
+					<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -46,198 +46,170 @@
 	<!-- **************************nav above- hero section with images -->
 
 	<!--/**** This is the hero background image with the H1 Rivers WW Rafting, article with small image ****/ -->
-<main>
+	<main>
 
-	<section class="hero-section">
+		<section class="hero-section section0">
 
 			<!-- Hero class with 2 sections -->
-		<div class = "hero-grid">
+			<div class = "hero-container">
 				<div class = "hero-image">
-				<!-- hero image underlay -->
-					<img src="images/indexphoto.webp" alt="Wake up in the Wilds!!">	
+					<!-- hero image underlay -->
+					<div class="hero-image">
+						<img src="images/indexphoto.webp" alt="What a view">
+					</div>
 				</div>
 
-
-				<!-- hero-content H1 and article -->
-			<div class = "hero-content">
-				<h1>RW HOME Page</h1>
-
-					<!-- ARTICLE with image that overlays hero image.-->
-				<div class= "article-container">
-				
+					<!-- hero-content H1 and article -->
+				<div class = hero-content>
+						<!-- ARTICLE with image that overlays hero image.-->
 					<article>
-						<div class = "article-paragraph1">
-		    				<p> We can provide guides for your personal trip of a lifetime to anywhere in the a 400 mile radius. </p>
-						</div>
+						<div class= "article-container">
+							<h1>Rivers Whitewater Home Page</h1>
+							<div class = "article-paragraph paragraph-text">
+								<p> We can provide guides for your personal trip of a lifetime to anywhere in the a 400 mile radius. Call today for the best bookings!! </p>
+							</div>
 
-						<div class="trips-link">
-							<a href="trips.html" class= "pages-link">BOOK AN ADVENTURE TODAY!!!</a>
-						<div>		
+							<div class="trips-link">
+								<a href="trips.html" class= "pages-link">BOOK AN ADVENTURE TODAY!!!</a>
+							<div>
+						</div>	
 					</article>
 
 				</div>
-
 			</div>
-
-		</div>
-	</section>
+		
+		</section>
 	
 <!-- ***END of MAIN section Header Hero img ************** Article with img-->
 
 
 
-	<section class="section1 ">
-		<h2>SOME FUN FACTS</h2>
-	
-		<div class = "guides-intro-container section1">
-			<div class="meet-guides-paragraph">
-					<!-- Content for the second section -->
-				<p>My granparents started this company and taught both my brother and I the fine art of Whitewater Rafting. We are carrying on our family traditions, and want you to be part of our family, if only for a while.</p>
-			</div>
-	
-			<div class="photo-caption">
-				<figure>
-					<div class="emp-photo">
-						<img src="images/trip5.webp" alt="trip5">
-						<figcaption>Hire a Private guide.</figcaption>
-					</div>
-				</figure>
-			</div>
-	
-			<div class="photo-caption michaels">
-				<figure>
-					<div class=" emp-photo emp-photo-michaels">
-						<img src="images/trip6.webp" alt="trip6">
-							<figcaption>Grand Gorge</figcaption>
-					</div>
-				</figure>
-			</div>
-	
-	
-			<div class="photo-caption">
-				<figure>
-					<div class="emp-photo">
-						<img src="images/trip7.webp" alt="Trip 7"><figcaption>Another one</figcaption>
-					</div>
-				</figure>
-		</div>
+		<section class="section1-index-container">
+			<h2 class="fun-facts">Some Fun Facts about us and your guides</h2>
 
-		</div>
-	</section>
+		
+				<div class="sect1-article-paragraph-index">
+					<h3 class="best>"Only the BEST!></h3>
+						<!-- Content for the second section -->
+					<p>My granparents started this company and taught both my brother and I the fine art of Whitewater Rafting. We are carrying on our family traditions, and want you to be part of our family, if only for a while.</p>
+				</div>
+		
+				
+			<div class="gallery-3">
+				<div class="photo-caption">
+					<figure>
+						<div class="trip-indx-photo">
+							<img src="images/trip5.webp" alt="trip5">
+							<figcaption>Hire a Private guide.</figcaption>
+						</div>
+					</figure>
+				</div>
+
+				<div class="photo-caption">
+					<figure>
+						<div class="trip-indx-photo">
+							<img src="images/trip6.webp" alt="trip6">
+								<figcaption class="trip-fig" >Grand Gorge</figcaption>
+						</div>
+					</figure>
+				</div>
+			
+			</div>
+		</section>
 	
 		<!-- ****END of section 1 employee guides-->
 	<!-- ************************LEAVE ABOVE-->
 	
-	<section class= "section2  message-section contact-section2">
-		<!-- /****This is section 2 for Send a Message Form and Map 	-->
-	<!--
-	An HTML form for:
-	user name
-	user email
-	purpose of the message- options: via radio buttom
-	for general inquirey. reservation question, website suggession
-	- message entry
-	checkbox labeled "Please subscribe me to the monthly newsletter
-	properly styled and labaeled submission button with "type" set to submit 
-	
-	a link to the contact us wireframe image in the footer of the contact.html page-->
-	
-		</div>
-	
-	<!-- HTML FORM SEND US A MESSAGE-->
-		<div class="message-area"> 
-				<!-- FIRST Part of the FORM-->
-			<form class="email-form">
-			
-			<legend class="form-title">Sign up for Email Newsletter</
-legend>
-	<fieldset>
-	
-		<div class="form-item column2">
-			<label for="fullname">Full Name:</label>
-			<input type="text" id="fullname" 
-name="fullname">
-		</div>
-		<div class="form-item column2">
-			<label for="useremail"> Email:</label>
-			<input type="email" id="useremail" 
-name="useremail">
-		</div>
-			<!-- Add a button with a type of submit at the 
-end of the 
-form element. The text content of the button is "Submit 
-Poll".-->
-		</fieldset>
-<!-- SECOND part of the FORM-->
-<!-- <div class="column1">
-		<label for="purpose">What is purpose of your 
-contact?></label>
-		<select id="purpose" name="purpose">
+		<section class= "section2-index-container">
+					<!-- /****This is section 2 for Send a Message Form and Map 	-->
+																		
 		
-		<option value="chrome">Chrome</option>
-		<option value="firefox">Firefox</option>
-		<option value="safari">Safari</option>
-		<option value="edge">Edge</option>
-		<option value="brave">Brave</option>
-		<option value="other">Other</option>
-	</select>
-		-->
-	<fieldset>
+						<!-- HTML FORM SEND US A MESSAGE-->
+			<div class="message-area"> 
+					<!-- FIRST Part of the FORM-->
+				<form class="email-form">
+					
+					<legend class="form-title">Sign up for Email Newsletter</legend>
+					<fieldset>
+					
+						<div class="form-item column2">
+							<label for="fullname">Full Name:</label>
+							<input type="text" id="fullname">
+						</div>
+						<div class="form-item column2">
+							<label for="useremail"> Email:</label>
+							<input type="email" id="useremail">
+						</div>
+					<!-- Add a button with a type of submit at the of the element. The text content of the button is "Submit".-->
 	
-		<label for="purpose">What Trip are you interested 
-in taking?</label>
-			<label>
-				<input type="radio" name="purpose" 
-value="General Inquiry" 		
-id="general">Family Float 
-Trip					<label>
-				<input type="radio" name="purpose" 
-value="Reservation 		Question" 
-id="reservation">Salmon River Medium Float<
-lable>
-			<label>
-				<input type="radio" name="purpose" 
-value="Website 		Suggestion" 
-id="suggestion">Class III-IV Whitewater</
-lable>
-	</fieldset>
-	<fieldset>
-	
-			<label for="themessage">You will get our newsletter, check your email. </label>	
-				<textarea id="themessage" name="themessage"
-rows="5" 		placeholder="Questions 
-About our Programs? "></textarea></label>
-	</fieldset>
-	<!-- Submit button-->
-				<button type="submit">Submit Poll</button>			
-			</form>
-		</div>
-</main>
+						<!--
+						 <div class="column1">
+							<label for="purpose">What is purpose?></label>
+							<select id="purpose" name="purpose">
+							
+							<option value="chrome">Chrome</option>
+							<option value="firefox">Firefox</option>
+							<option value="safari">Safari</option>
+							<option value="edge">Edge</option>
+							<option value="brave">Brave</option>
+							<option value="other">Other</option>
+							-->
+					</fieldset>
+
+					<fieldset>
+					
+					<label for="purpose">What Trip are you interested in taking?</label>
+						<label>
+							<input type="radio" name="purpose" value="General Inquiry" id="general">Family Float trip		
+						<label>
+							<input type="radio" name="purpose" value="Reservation Question" id="reservation">Salmon River Medium Float
+						</label>
+
+						<lable>
+							<input type="radio" name="purpose" value="Website Suggestion">Class III-IV Whitewater
+						</lable>
+
+					</fieldset>
+					<fieldset>
+					
+						<label for="themessage">You will get our newsletter, check your email. </label>	
+							<textarea id="themessage" name="themessage" placeholder="Questions about our Programs? "></textarea>
+						</label>
+					</fieldset>
+								<!-- Submit button-->
+						<button type="submit">Submit To EMAIL</button>			
+				</form>
+			</div>
+
+			<div class="photo-caption7">
+				<figure>
+					<div class="trip-indx-photo7">
+						<img src="images/trip7.webp" alt="Trip 7"><figcaption class="trip-fig">Another 
+one</figcaption>
+					</div>
+				</figure>
+			</div>
+
+		</section>
+	</main>
 </body>
 
 
 <!--/****this is the footer with copywrite and social media links/images***/-->
     <footer>
-			<div class = "footer-container social-list">
+		<div class = "footer-container social-list">
 
-
-				<div class="wireframe-link social-link"><a href="wirefrm.pdf"></a>
-					<figure><img src="images/wirefrm.jpg" alt="wireframe">
-						<figcaption class="wirefig">WRFRM</figcaption>
-					</figure>
-				</div>
-    
-    	    	<p>&#169; 2025 Rivers Whitewater & Kayla Powers</p>
-    	        
-				<!-- See if you can find smaller versions of these icons or use pS to -->
-                <!-- Facebook -->			
+			<p>&#169; 2025 Rivers Whitewater & Kayla Powers</p>
+			
+			<!-- See if you can find smaller versions of these icons or use pS to -->
+				<!-- Facebook -->			
 			<a href="https://www.facebook.com" class="social-link"><img src="images/facebook.webp" alt="Rivers Facebook"></a>
-                    
-                <!-- YouTube -->
-            <a href="https://www.youtube.com" class="social-link"><img src="images/youtube.webp" alt="Rivers You-Tube"></a>
 
-                <!-- LinkedIn-->
-            <a href="https://www.linkedin.com" class="social-link"><img src="images/linkedin.webp" alt="Rivers LinkedIn"></a>
+				<!-- YouTube -->
+			<a href="https://www.youtube.com" class="social-link"><img src="images/youtube.webp" alt="Rivers You-Tube"></a>
+
+				<!-- LinkedIn-->
+			<a href="https://www.linkedin.com" class="social-link"><img src="images/linkedin.webp" alt="Rivers LinkedIn"></a>
 		</div>                    	
     </footer>
 </body>
